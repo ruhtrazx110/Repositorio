@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de js iniciaçao</title>
+<style>
+#questionario{background-color: aqua;
+width: 50%; margin: auto;border:  solid black 2px;border-radius: 3px;box-shadow: black -5px 6px 3px 1px;text-align: center;}
+#caixinha{margin: auto;
+    background-color: rgb(113, 105, 105);
+    margin-bottom: 5px; color: white;
+    text-shadow: 10px black;
+}
+
+
+</style>
+
+</head>
+<body><div id="questionario">
+
+    <h1 style="text-decoration:underline;"
+    >questionario</h1>
+    <button onclick="caixadepergunta()" id="caixinha">
+    questionario
+</button>
+</div>
+
+<script>
+function caixadepergunta(){var resposta = window.prompt('what is your name?');
+        if(resposta !== null && resposta !== '') {
+    document.body.style.backgroundColor='red'}else{document.body.style.backgroundColor='blue'}
+
+}
+
+</script>
+<div id="name"></div>
+    
+</body>
+</html>
