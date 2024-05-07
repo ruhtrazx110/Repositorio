@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+:root{--secondary-color:rgb(144, 20, 221);}
+    *{
+        padding: 0px;
+    margin: 0;}
+header{
+    background-color: black;
+    display: block;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;}
+body{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(63, 63, 63),black);
+    height: max-content;
+}
+
+main{width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 50px 2% 0px;
+    height: 100vh, fit-content;
+    }
+    @media( min-width:101%){
+        main{height:fit-content;}
+    }
+    #titulo{color: white;
+    font-family:'Jaro', 'comic sans';
+    font-optical-sizing: auto;
+font-weight: 400;
+text-shadow: var(--secondary-color) 3px 1px;}
+#questoes{display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 300px;border-bottom: 5px solid;
+}
+.inputs{height: 40px;
+    font-size: 25pt;
+    text-align: center;
+}
+#butao1{
+    height: 40px;border-radius: 5px;
+font-size: 15pt;}
+#butao1:hover{
+    border:solid 3px ;
+    font-size: 18pt;}
+.tabela{
+    display: table;
+    margin: 0px auto 10px ;
+    padding: 5px;
+    }
+#linha{
+    display: table-row;
+    
+    }
+@media(max-width: 500px){
+.celulas{width:fit-content;
+padding:0px;
+font-size: 8pt;
+word-wrap: normal;}
+
+}
+.celulas{
+    display: table-cell;
+    border: 1px solid black;
+    padding:10px;
+    text-align: center;
+    width: 0px;
+    
+}
+

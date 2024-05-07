@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+#custom{background-color: rgb(54, 54, 54);}
+.outro{background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%,-50%);
+padding: 20px;
+border: solid 3px black;
+border-radius: 15px;
+font-size: 20px;}
+#divi{background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+     transform: translate(-50%,-50%);padding: 20px;
+    border-radius: 15px;}
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" id="numeros">
+        <button onclick="gerar()">gerar</button>
+    </div>
+    <div>
+        <p id="texto"></p>
+        <p></p>
+    </div>
+    <script>
+        function gerar(){
+        number = document.getElementById('numeros').value
+        if(number %2 == 1){document.getElementById('texto').innerText ='seu numero é impar'}else{document.querySelector('div>p').innerText ='seu numero é par'}
+        document.body.id = 'custom';
+        document.getElementById('texto').classList.toggle('outro')
+        document.getElementsByTagName('div')[0].id = 'divi';
+    
+    
+    
+        /*   document.body.style.backgroundColor = 'gray';
+    document.body.style.padding = '50px';
+document.body.div.style.backgroundColor = 'black';
+document.body.div.p.style.color = 'white'}
+*/
+        }
+    </script>
+</body>
+</html>

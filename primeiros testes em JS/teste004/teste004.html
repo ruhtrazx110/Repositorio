@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de nota fiscal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1 id="titulo"><strong>Gerador de Nota Fiscal</strong>
+</h1>
+</header>
+<main>
+    <div id="questoes">
+        <input type="text" class="inputs" placeholder="nome do produto">
+        <input type="number" class="inputs" placeholder="valor do produto">
+        <input type="number" class="inputs" placeholder="valor pago">
+        <button onclick="gerar()"
+        id="butao1">Gerar</button>
+    </div>
+    <div id="notaFiscal" class="tabela">
+        <div class="linha">
+            <div class="celulas">nome do produto</div>
+            <div class="celulas">data</div>
+            <div class="celulas">horario</div>
+            <div class="celulas">valor</div>
+            <div class="celulas">valor pago</div>
+            <div class="celulas">troco</div>
+            <div class="celulas">N° da solicitação</div>
+        </div>
+
+
+    </div>
+
+</main>
+<script src="codigo.js"></script>
+    
+</body>
+</html>
